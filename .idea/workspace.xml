@@ -4,36 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4cc8482-a2f0-4bd0-b4e3-f03f3d02aaeb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/pythonFinalTask_root.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/farmersMarkets/farmersMarkets/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/farmersMarkets/farmersMarkets/asgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/farmersMarkets/farmersMarkets/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/farmersMarkets/farmersMarkets/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/farmersMarkets/farmersMarkets/wsgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/farmersMarkets/mainfarmersMarkets/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/farmersMarkets/mainfarmersMarkets/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/farmersMarkets/mainfarmersMarkets/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/farmersMarkets/mainfarmersMarkets/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/farmersMarkets/mainfarmersMarkets/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/farmersMarkets/mainfarmersMarkets/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/farmersMarkets/mainfarmersMarkets/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/farmersMarkets/mainfarmersMarkets/templates/mainfarmersMarkets/about.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/farmersMarkets/mainfarmersMarkets/templates/mainfarmersMarkets/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/farmersMarkets/mainfarmersMarkets/templates/mainfarmersMarkets/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/farmersMarkets/mainfarmersMarkets/templates/mainfarmersMarkets/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/farmersMarkets/mainfarmersMarkets/templates/market_detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/farmersMarkets/mainfarmersMarkets/templates/market_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/farmersMarkets/mainfarmersMarkets/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/farmersMarkets/mainfarmersMarkets/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/farmersMarkets/mainfarmersMarkets/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/farmersMarkets/manage.py" afterDir="false" />
-    </list>
+    <list default="true" id="a4cc8482-a2f0-4bd0-b4e3-f03f3d02aaeb" name="Changes" comment="Good evening, Konstantin Mikhailovich! I am sending you the project for review." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -91,9 +62,20 @@
       <option name="presentableId" value="Default" />
       <updated>1717302581225</updated>
     </task>
+    <task id="LOCAL-00001" summary="Good evening, Konstantin Mikhailovich! I am sending you the project for review.">
+      <option name="closed" value="true" />
+      <created>1717620683109</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1717620683109</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Good evening, Konstantin Mikhailovich! I am sending you the project for review." />
+    <option name="LAST_COMMIT_MESSAGE" value="Good evening, Konstantin Mikhailovich! I am sending you the project for review." />
   </component>
 </project>
