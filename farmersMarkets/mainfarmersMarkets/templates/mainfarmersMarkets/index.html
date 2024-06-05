@@ -1,0 +1,19 @@
+{% extends 'mainfarmersMarkets/base.html' %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block content %}
+    <h1>Главная страница</h1>
+    {% if categories %}
+    {% for el in categories %}
+        <div class="aler alert-warning mt-2">
+            <h3>{{ el.id }}</h3>
+            <p>{{ el.category }}</p>
+        </div>
+    {% endfor %}
+    {% else %}
+        <p>У нас нет записей!</p>
+    {% endif %}
+{% endblock %}

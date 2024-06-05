@@ -1,0 +1,15 @@
+{% extends 'mainfarmersMarkets/base.html' %}
+
+{% block title %}
+Создать категорию
+{% endblock %}
+
+{% block content %}
+    <h1>Создать категорию</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.category }}<br>
+        <button type="submit" class="btn btn-success">Добавить</button>
+        <span>{{ error }}</span>
+    </form>
+{% endblock %}

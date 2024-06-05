@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ market.market_name }}</title>
+</head>
+<body>
+<h1>{{ market.market_name }}</h1>
+<p>Средний рейтинг: {{ avg_rating }}</p>
+<h2>Рецензии:</h2>
+<ul>
+    {% for review in reviews %}
+    <li>{{ review.score }} - {{ review.review }}</li>
+    {% endfor %}
+</ul>
+</body>
+</html>
