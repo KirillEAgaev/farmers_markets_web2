@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Список рынков</title>
+</head>
+<body>
+<h1>Список рынков</h1>
+<ul>
+    {% for market in markets %}
+    <li>{{ market.market_name }}</li>
+    {% endfor %}
+</ul>
+</body>
+</html>
