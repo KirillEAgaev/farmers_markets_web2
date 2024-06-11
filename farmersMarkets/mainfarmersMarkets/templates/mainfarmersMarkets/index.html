@@ -6,13 +6,18 @@
 
 {% block content %}
     <h1>Главная страница</h1>
-    {% if categories %}
-    {% for el in categories %}
-        <div class="aler alert-warning mt-2">
-            <h3>{{ el.id }}</h3>
-            <p>{{ el.category }}</p>
-        </div>
-    {% endfor %}
+    {% if category %}
+    <table border="2" style="width:20%">
+        <caption style = "caption-side:top">Категории товаров</caption>
+        <tr>
+            <th>Категория</th>
+        </tr>
+        {% for el in category %}
+        <tr>
+            <td>{{ el.category }}</td>
+        </tr>
+        {% endfor %}
+    </table>
     {% else %}
         <p>У нас нет записей!</p>
     {% endif %}

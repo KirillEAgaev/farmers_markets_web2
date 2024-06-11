@@ -7,8 +7,8 @@ from .models import Market, Review
 
 
 def index(request):
-    categories = Category.objects.all()
-    return render(request, 'mainfarmersMarkets/index.html', {'title': 'Главная страница сайта', 'categories': categories})
+    category = Category.objects.all()
+    return render(request, 'mainfarmersMarkets/index.html', {'title': 'Главная страница сайта', 'category': category})
 
 
 def about(request):
@@ -41,7 +41,7 @@ def market_list(request):
 
 
 def market_detail(request, market_id):
-    market = Market.objects.get(id=market_id)
+    market = Market.objects.get(id=id)
     reviews = Review.objects.filter(market=market)
     avg_rating = reviews.aggregate(models.Avg('score'))['score__avg']
     context = {
