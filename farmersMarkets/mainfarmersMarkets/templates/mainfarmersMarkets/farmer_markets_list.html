@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Farmer Markets</title>
+</head>
+<body>
+<h1>Search Farmer Markets</h1>
+<form method="GET">
+    <label for="city">City:</label>
+    <input type="text" id="city" name="city">
+
+    <label for="state">State:</label>
+    <input type="text" id="state" name="state">
+
+    <label for="postal_code">Postal Code:</label>
+    <input type="text" id="postal_code" name="postal_code">
+
+    <label for="latitude">Latitude:</label>
+    <input type="text" id="latitude" name="latitude">
+
+    <label for="longitude">Longitude:</label>
+    <input type="text" id="longitude" name="longitude">
+
+    <label for="distance">Search within (miles):</label>
+    <input type="text" id="distance" name="distance">
+
+    <button type="submit">Search</button>
+</form>
+
+<h2>Search Results:</h2>
+<ul>
+    {% for market in markets %}
+    <li>{{ market.name }} - {{ market.city }}, {{ market.state }}, {{ market.postal_code }}</li>
+    {% endfor %}
+</ul>
+</body>
+</html>

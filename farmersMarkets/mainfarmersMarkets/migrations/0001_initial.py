@@ -50,11 +50,11 @@ class Migration(migrations.Migration):
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('market_name', models.CharField(max_length=100)),
                 ('street', models.CharField(max_length=100)),
+                ('city', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='mainfarmersMarkets.city')),
+                ('state', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='mainfarmersMarkets.state')),
                 ('zip', models.IntegerField()),
                 ('lat', models.FloatField()),
                 ('lon', models.FloatField()),
-                ('city', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='mainfarmersMarkets.city')),
-                ('state', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='mainfarmersMarkets.state')),
             ],
         ),
         migrations.CreateModel(

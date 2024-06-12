@@ -5,11 +5,56 @@
     <title>Список рынков</title>
 </head>
 <body>
+<h1>Поиск фермерских рынков</h1>
+<form method="GET">
+    <label for="city">Город:</label>
+    <input type="text" id="city" name="city" required><br>
+
+    <label for="state">Штат:</label>
+    <input type="text" id="state" name="state" required><br>
+
+    <label for="postal_code">Почтовый индекс:</label>
+    <input type="text" id="postal_code" name="postal_code" required><br>
+
+    <label for="max_distance">Поиск в радиусе (км):</label>
+    <input type="number" id="max_distance" name="max_distance" value="30"><br>
+
+    <button type="submit">Search</button>
+</form>
+
+<hr>
+
+<h2>Результат поиска</h2>
+
+<ul>
+    {% for market in markets %}
+    <li>{{ market.market_name }}, {{ market.street }}, {{ market.city.city }}, {{ market.city.state.state_abbr }}, {{ market.zip }}</li>
+    {% empty %}
+    <li>No markets found within the specified distance.</li>
+    {% endfor %}
+</ul>
 <h1>Список рынков</h1>
 <ul>
     {% for market in markets %}
     <li>{{ market.market_name }}</li>
     {% endfor %}
 </ul>
+
+<!-- Добавление пагинации -->
+<nav class="list-pages">
+    <ul>
+        {% if paginator.num_pages > 20 %}
+            {% for p in paginator.page_range|slice:":20" %}
+                <a class="page-num" href="?page={{ p }}">{{ p }}</a>
+            {% endfor %}
+        <span>...</span>
+        <a class="page-num" href="?page={{ paginator.num_pages }}">{{ paginator.num_pages }}</a>
+        {% else %}
+            {% for p in paginator.page_range %}
+                <a class="page-num" href="?page={{ p }}">{{ p }}</a>
+            {% endfor %}
+        {% endif %}
+    </ul>
+</nav>
 </body>
 </html>
